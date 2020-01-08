@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
+import com.stackroute.keepnote.jwtfilter.JwtFilter;
+
 /*
  * The @SpringBootApplication annotation is equivalent to using @Configuration, @EnableAutoConfiguration 
  * and @ComponentScan with their default attributes
@@ -23,9 +25,12 @@ public class CategoryServiceApplication {
 	 */
 	@Bean
 	public FilterRegistrationBean jwtFilter() {
-		return null;
+		
+		final FilterRegistrationBean<JwtFilter> registrationBean=new FilterRegistrationBean<>();
+		registrationBean.setFilter(new JwtFilter());
+		//registrationBean.addUrlPatterns("/api/v1/*");
+		return registrationBean;
 	}
-	
 	
 	
 	/*
