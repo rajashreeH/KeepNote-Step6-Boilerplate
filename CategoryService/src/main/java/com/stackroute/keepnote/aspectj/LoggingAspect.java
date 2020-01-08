@@ -15,7 +15,6 @@ public class LoggingAspect {
 	 * method will have all the four aspectJ annotation
 	 * (@Before, @After, @AfterReturning, @AfterThrowing).
 	 */
-
 	@Before("execution(com.stackroute.keepnote.controller.*)")
 	public void logBefore() {
 		System.out.println("@Before:" + new Date());
