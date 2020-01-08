@@ -3,7 +3,6 @@ package com.stackroute.keepnote.config;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 
-import org.apache.commons.io.filefilter.RegexFileFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

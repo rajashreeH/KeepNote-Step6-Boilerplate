@@ -1,10 +1,11 @@
 package com.stackroute.keepnote.service;
 
+import java.util.List;
+
 import com.stackroute.keepnote.exception.CategoryDoesNoteExistsException;
 import com.stackroute.keepnote.exception.CategoryNotCreatedException;
 import com.stackroute.keepnote.exception.CategoryNotFoundException;
 import com.stackroute.keepnote.model.Category;
-import java.util.List;
 
 public interface CategoryService {
 	

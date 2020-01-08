@@ -1,19 +1,26 @@
 package com.stackroute.keepnote.test.service;
 
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.when;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Optional;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
 import com.stackroute.keepnote.exception.CategoryNotCreatedException;
 import com.stackroute.keepnote.exception.CategoryNotFoundException;
 import com.stackroute.keepnote.model.Category;
 import com.stackroute.keepnote.repository.CategoryRepository;
 import com.stackroute.keepnote.service.CategoryServiceImpl;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.mockito.InjectMocks;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.when;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
-import java.util.*;
 
 public class CategoryServiceImplTest {
 
